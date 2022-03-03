@@ -32,7 +32,7 @@ const GamePage = () => {
         setPlayerChoice(player);
         setTimeout(() => {
             play(player, numberMachine);
-            vibrar();
+           // vibrar();
             setIsLoading(false)
         }, 1500)
     };
@@ -77,10 +77,10 @@ const GamePage = () => {
         localStorage.setItem("player", JSON.stringify(singlePlayer));
     }
 
-    const vibrar = () => {
+    // const vibrar = () => {
         
-        window.navigator.vibrate([500]);
-    }
+    //     window.navigator.vibrate([500]);
+    // }
 
 
     useEffect(() => {
