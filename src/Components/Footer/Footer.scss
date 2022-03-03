@@ -1,0 +1,35 @@
+@import '../../index.scss';
+
+
+.c-footer{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    background: rgb(17, 200, 233);
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;  
+    color: #000000;
+
+    @include desktop {
+        
+        width: 100vw;
+        height: 100px;
+        display: flex;
+        background: rgb(17, 200, 233);
+        align-items: center;
+        justify-content: center;   
+        color: #000000;
+        flex-direction: row;
+
+    }
+
+    img{
+
+        width: 35px;
+    }
+
+    a{
+        margin: 15px;
+    }
+}

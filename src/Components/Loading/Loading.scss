@@ -1,0 +1,101 @@
+@import '../../index.scss';
+
+.c-loading{
+    width: 350px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    overflow: hidden;
+    background: #00FFFF;
+    border-radius: 10px;
+
+    @include desktop {
+
+      width: 600px;
+      height: 400px;    
+
+    }
+    
+
+    &__left{
+
+        animation-name: shake;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+        animation-timing-function: ease-in-out;
+
+        img {
+          
+          width: 240px;
+
+          @include desktop {
+
+            width: auto;
+          }
+        }
+    }
+
+    &__right{
+
+        animation-name: shake2;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out; 
+
+        img {
+          
+          width: 240px;
+
+          @include desktop {
+
+            width: auto;
+          }
+        }
+
+    }
+
+
+}
+
+@keyframes shake {
+
+    10%, 90% {
+      transform: translate3d(10px, 10px, 0);
+      
+    }
+    
+    20%, 80% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(0, 60px, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(-10px, -60px, 0);
+    }
+  }
+  
+  @keyframes shake2 {
+
+    10%, 90% {
+      transform: translate3d(0, -60px, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(0, 60px, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(0, 10px, 0);
+    }
+  }

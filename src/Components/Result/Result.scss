@@ -1,0 +1,77 @@
+@import '../../index.scss';
+
+.c-retult{    
+
+    &__result {
+
+        display: flex;
+        width: 350px;
+        height: 280px;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background: rgb(26, 25, 25);
+        border-radius: 10px;
+
+        @include desktop {
+            
+            width: 600px;
+            height: 400px;
+
+        }
+
+        &--player{
+
+            animation-name: real;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+            animation-timing-function: ease-in-out;
+
+            img {
+          
+                width: 240px;
+      
+                @include desktop {
+      
+                  width: auto;
+                }
+              }
+           
+        }
+
+        &--machine {
+            
+            animation-name: real;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-in-out;
+
+            img {
+          
+                width: 240px;
+      
+                @include desktop {
+      
+                  width: auto;
+                }
+              }
+        }
+    }
+}
+
+@keyframes real {
+
+    0%{
+
+        transform: translate3d(10px, 5px, 0);
+    }
+
+    100%{
+
+        transform: translate3d(0,0,0);
+
+    }
+    
+}

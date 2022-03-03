@@ -1,0 +1,148 @@
+@import '../../index.scss';
+
+.gamepage {
+    color: rgb(0, 238, 255);
+   // background: lightcoral;
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include desktop {
+      
+        width: 80vw;   
+
+    }
+
+    &__score{
+       // background: lightblue;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        align-items: flex-start;
+        margin: 30px;
+        
+
+        h1{
+            font-size: 24px;
+            margin: 20px;
+            color: whitesmoke;
+            
+            @include desktop {
+
+                font-size: 40px;              
+
+            }
+        }
+
+        h2{
+            font-size: 30px;
+            margin: 0px;
+            
+            @include desktop {
+
+                font-size: 45px;              
+
+            }
+
+        }
+    }
+
+    &__choice {
+
+        display: flex;
+        //background:  lightblue;
+        margin: 30px;
+       
+
+        .home {
+
+            width: 80px;
+            height: 80px;            
+            border: 3px solid grey;            
+            border-radius: 50%;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+
+            @include desktop {
+
+                width: 150px;
+                height: 150px; 
+                margin: 15px;
+               
+            }                       
+
+            &:hover{
+
+                cursor: pointer;
+            }
+
+            img {
+
+                width: 50px;
+                filter: saturate(0%);
+
+                @include desktop {
+
+                    width: 90px;                 
+                }
+
+                &:active{
+
+                    filter: none;
+                    
+                }
+            }
+        }
+        
+        
+        &--img{
+
+            width: 80px;
+            height: 80px;            
+            border: 3px solid grey;            
+            border-radius: 50%;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;  
+            background: transparent; 
+            
+            @include desktop {
+
+                width: 150px;
+                height: 150px; 
+                margin: 15px;
+
+            }
+           
+            &:hover{
+
+                cursor: pointer;
+            }
+
+            img{
+
+                width: 75px;
+                filter: saturate(30%);
+                
+                @include desktop {
+
+                    width: 150px;                    
+
+                }
+                &:active{
+
+                    filter: none;
+                    
+                }
+            }           
+        }
+    }
+}
