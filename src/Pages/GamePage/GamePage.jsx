@@ -32,6 +32,7 @@ const GamePage = () => {
         setPlayerChoice(player);
         setTimeout(() => {
             play(player, numberMachine);
+            vibrar();
             setIsLoading(false)
         }, 1500)
     };
@@ -74,6 +75,11 @@ const GamePage = () => {
         singlePlayer.score = player.score + param;
         localStorage.setItem("players", JSON.stringify(arrayPlayers));
         localStorage.setItem("player", JSON.stringify(singlePlayer));
+    }
+
+    const vibrar = () => {
+        
+        window.navigator.vibrate([500]);
     }
 
 
