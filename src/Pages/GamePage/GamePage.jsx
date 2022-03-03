@@ -96,15 +96,15 @@ const GamePage = () => {
             <div className="gamepage__choice" >
 
                 <button className="gamepage__choice--img" onClick={(e) => handleChoice((e = 0))}>
-                    <img src="./assets/piedraR1.png" alt="closed hand " />
+                    <img src="https://i.ibb.co/HCY0rWs/piedraR.png" alt="closed hand " />
                 </button>
 
                 <button className="gamepage__choice--img" onClick={(e) => handleChoice((e = 1))}>
-                    <img src="./assets/papelR.png" alt="paper hand" />
+                    <img src="https://i.ibb.co/XZBBSnL/papelR.png" alt="paper hand" />
                 </button>
 
                 <button className="gamepage__choice--img" onClick={(e) => handleChoice((e = 2))}>
-                    <img src="./assets/TijeraR.png" alt="scissors hand" />
+                    <img src="https://i.ibb.co/hCT2j08/TijeraR.png" alt="scissors hand" />
                 </button>
 
                 <button className="home">

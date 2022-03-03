@@ -5,13 +5,13 @@ const Result = (props) => {
 
     const { machineChoice, playerChoice, winner } = props;
     //imagenes de la selección del jugador
-    const rockL = <img src="./assets/piedraL.png" alt="rock hand" />
-    const paperL = <img src="./assets/papelL.png" alt="paper hand" />
-    const scissorsL = <img src="./assets/TijeraL.png" alt="scissors hand" />
+    const rockL = <img src="https://i.ibb.co/GQNPLVc/piedral.png" alt="rock hand" />
+    const paperL = <img src="https://i.ibb.co/GddV1xj/papelL.png" alt="paper hand" />
+    const scissorsL = <img src="https://i.ibb.co/G3TSTyQ/TijeraL.png" alt="scissors hand" />
     //imagenes de la selección de la máquina
-    const rockR = <img src="./assets/piedraR.png" alt="rock hand" />
-    const paperlR = <img src="./assets/papelR.png" alt="paper hand" />
-    const scissorsR = <img src="./assets/tijeraR.png" alt="scissors hand" />
+    const rockR = <img src="https://i.ibb.co/HCY0rWs/piedraR.png" alt="rock hand" />
+    const paperlR = <img src="https://i.ibb.co/XZBBSnL/papelR.png" alt="paper hand" />
+    const scissorsR = <img src="https://i.ibb.co/hCT2j08/TijeraR.png" alt="scissors hand" />
 
 
     return (
