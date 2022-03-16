@@ -1,4 +1,12 @@
-# React Js
+## Hello World, 
+
+This project was a technical test, to be completed in 4 days. 
+It is the popular game of rock, paper, scissors. It consists of registering a player offline and saving players and their scores. 
+It is simple but reflects some knowledge in React js and Javascript.
+
+
+
+## React Js
 
 Este proyecto ha sido creado con React js. V17.0.2
 
