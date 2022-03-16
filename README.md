@@ -1,14 +1,18 @@
-## Hello World, 
+## Hello World, 👋
 
 This project was a technical test, to be completed in 4 days. 
 It is the popular game of rock, paper, scissors. It consists of registering a player offline and saving players and their scores. 
 It is simple but reflects some knowledge in React js and Javascript.
+
+Application deployed <a href="https://game-rock-paper-scissors-react.vercel.app/" >Here</a>
 
 ### Screenshots:
 
 <img width="300" src="https://i.ibb.co/qF4tS7c/RPIhome.png">
 <img width="300" src="https://i.ibb.co/FYqRHxr/RPIplaying.png">
 <img width="300" src="https://i.ibb.co/ZxLcwss/RPIresult.png">
+
+
 
 
 ## React Js
